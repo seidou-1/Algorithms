@@ -25,9 +25,15 @@ public class PickingAppleStocks {
         
         for (int i = 0; i<stockPrices.length; i++){
             for (int j = i+1; j< stockPrices.length; j++){
-                
+                 if (stockPrices[i] < stockPrices[j] && (stockPrices[j]-stockPrices[i] > currentProfit)){
+                    
+                    currentProfit = stockPrices[j] - stockPrices[i];
+                }
+
             }
         }
+        
+        return currentProfit;
     }
     
 }
