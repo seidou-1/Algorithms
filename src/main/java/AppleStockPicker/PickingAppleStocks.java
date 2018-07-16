@@ -20,7 +20,14 @@ public class PickingAppleStocks {
 //    }
     
     public static int getMaxProfit(int[] stockPrices) {
+        // calculate the max profit
+        int currentProfit = stockPrices[1] - stockPrices[0];
         
+        for (int i = 0; i<stockPrices.length; i++){
+            for (int j = i+1; j< stockPrices.length; j++){
+                
+            }
+        }
     }
     
 }
